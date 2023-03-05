@@ -127,6 +127,10 @@ fn print_event<'life>(_input: String, _events: &'life Vec<Event>, _npcs: &'life 
 
 fn print_season_all<'life> (_events: &'life Vec<Event>, _npcs: &'life Vec<NPC>) {
     print_line();
+    print_season(String::from("봄"), _events, _npcs, true);
+    print_season(String::from("여름"), _events, _npcs, true);
+    print_season(String::from("가을"), _events, _npcs, true);
+    print_season(String::from("겨울"), _events, _npcs, true);
     print_line();
     start(_events, _npcs);
 }

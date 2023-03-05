@@ -71,6 +71,13 @@ fn print_season(season_num: u8) {
     cal_info.insert(28 * 3 + 16, "야시장");
     cal_info.insert(28 * 3 + 24, "겨울 별의 만찬");
 
+    match season_num {
+        0 => println!("<====\t봄\t====>"),
+        1 => println!("<====\t여름\t====>"),
+        2 => println!("<====\t가을\t====>"),
+        _ => println!("<====\t겨울\t====>"),
+    }
+
     let mut idx: u8 = 0;
 
     // 개선 필요
